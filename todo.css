@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+  body{
+    background-color: rgb(248, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+  .title{
+    font-size: 34px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    margin: 30px 0;
+  }
+  .todo-list{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.658);
+    border-radius: 5px;
+    background-color: rgba(186, 186, 255, 0.329);
+  }
+  .list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+  }
+  .entered-list{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.603);
+    font-size: 16px;
+    outline: none;
+  }
+  .add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    outline: none;
+    font-size: 16px;
+    color: rgb(255, 253, 253);
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+    font-weight: bold;
+  }
+  .add-list.active{
+    opacity: 1;
+    pointer-events: all;
+  }
+  .tasks{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(59, 0, 0, 0.658) ;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .item p{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+  }
+  .item.completed p{
+    text-decoration: line-through;
+    color: rgb(253, 0, 0);
+    font-weight: bold;
+  }
+  .item-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .item-btn{
+    color: rgb(53, 53, 53);
+    font-size: 18px;
+  }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+
+  <body>
+    <!-- title -->
+    <h1 class="title">To Do List</h1>
+<!-- list container -->
+    <div class="todo-list">
+      <div class="list-head">
+        <input type="text" class="entered-list" />
+        <button class="add-list">ADD</button>
+      </div>
+      <div class="tasks">
+        <div class="item">
+          <p>Read a Book</p>
+          <div class="item-btn">
+            <i class="fa-solid fa-square-pen" style="font-size: 20px"></i>
+            <i class="fa-solid fa-square-xmark" style="font-size: 20px"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./todo.js"></script>
+  </body>
+</html>
